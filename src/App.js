@@ -18,13 +18,21 @@ function App() {
 	// 	setSt2(currentState);
   // }
 
-  function task3() {
+	// const[st3, setSt3] = useState();
+  // function task3(event) {
+		
+	// 	let st3 = event.target.value;
+
+	// 	console.log(event.target.value);
+		
+	// 	setSt3(st3);
+
+  // }
+
+  function task4() {
 
   }
 
-  // function task4() {
-
-  // }
   // function task5() {
 
   // }
@@ -58,16 +66,18 @@ function App() {
         <div onMouseEnter={task2} className="task-2"></div>
         <div>{st2}</div>
       </section> */}
-      <section>
-        <h2>Task 3</h2>
-        <input type="text" className="task-3" />
-        <div>{st3}</div>
-      </section>
       {/* <section>
+        <h2>Task 3</h2>
+        <input onInput={task3} type="text" className="task-3" />
+        <div>{st3}</div>
+      </section> */}
+
+      <section>
         <h2>Task 4</h2>
         <button className="task-4">Count</button>
         <div>{st4}</div>
-      </section> */}
+      </section>
+			
       {/* <section>
         <h2>Task 5</h2>
         <input type="checkbox" currentValue="55" />
