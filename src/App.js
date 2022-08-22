@@ -36,40 +36,47 @@ function App() {
 	// 	setSt4(currentState);
   // }
 
-	const[st5, setSt5] = useState();
-	let out=React.createRef();
-  function task5(event) {
-		if(event.target.checked) {
-			out.current.textContent = event.target.value;
+	// const[st5, setSt5] = useState();
+	// let out=React.createRef();
+  // function task5(event) {
+	// 	if(event.target.checked) {
+	// 		out.current.textContent = event.target.value;
 
-		} else {
-			out.current.textContent = '0';
-		}
-		// setSt5(out.current.value);
+	// 	} else {
+	// 		out.current.textContent = '0';
+	// 	}
+	// 	// setSt5(out.current.value);
 
-		// let out5 = out.current.value;
+	// 	// let out5 = out.current.value;
 
-    // if (out.current.checked) {
-    //   setSt5(out5);
-    // }
-    // else {
-    //   out5 = '0';
-    //   setSt5(out5);
-    // }
+  //   // if (out.current.checked) {
+  //   //   setSt5(out5);
+  //   // }
+  //   // else {
+  //   //   out5 = '0';
+  //   //   setSt5(out5);
+  //   // }
 
-		// // --------------
-		// let v5 = st5;
-		// if(event.target.checked) {
-		// 	v5 = event.target.value;
-		// } else {
-		// 	v5 = '0';
-		// }
-		// setSt5(v5);
-		// -------------
-  }
-  // function task6() {
-
+	// 	// // --------------
+	// 	// let v5 = st5;
+	// 	// if(event.target.checked) {
+	// 	// 	v5 = event.target.value;
+	// 	// } else {
+	// 	// 	v5 = '0';
+	// 	// }
+	// 	// setSt5(v5);
+	// 	// -------------
   // }
+
+	// const[st6, setSt6] = useState();
+	// let out6=React.createRef();
+  // function task6(event) {
+	// 	out6 = event.target.value;
+	// 	console.log(event.target.value);
+
+	// 	setSt6(out6);
+  // }
+
   // function task7() {
 
   // }
@@ -111,28 +118,30 @@ function App() {
         <div>{st4}</div>
       </section> */}
 			
-      <section>
+      {/* <section>
         <h2>Task 5</h2>
         <input onChange={task5} type="checkbox" currentValue="55"/>
         <div ref={out}>{st5}</div>
-      </section>
+      </section> */}
 
       {/* <section>
         <h2>Task 6</h2>
-        <select className="task-6">
+        <select onChange={task6} className="task-6">
           <option value="7">seven</option>
           <option value="4">four</option>
           <option value="9">nine</option>
           <option value="10">ten</option>
         </select>
-        <div>{st6}</div>
+        <div ref={out6}>{st6}</div>
       </section> */}
-      {/* <section>
+
+      <section>
         <h2>Task 7</h2>
         <div className="block-7"></div>
         <button className="task-7">Color</button>
         <div>{st7}</div>
-      </section> */}
+      </section>
+
       {/* <section>
         <h2>Task 8</h2>
         <input type="text" className="task-8"></input>
