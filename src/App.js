@@ -102,12 +102,16 @@ function App() {
 	// 	setSt8(out.current.textContent);
   // }
 
-  function task9() {
+	// const[st9, setSt9] = useState();
+	// let out=React.createRef();
+  // function task9(event) {
+	// 	out.current.textContent = event.target.value;
+	// 	setSt9();
+  // }
+
+  function task10() {
 
   }
-  // function task10() {
-
-  // }
 
   return (
     <>
@@ -167,18 +171,18 @@ function App() {
         <div ref={out}>{st8}</div>
       </section> */}
 
-      <section>
-        <h2>Task 9</h2>
-        <input type="range" className="task-9"></input>
-        <div>{st9}</div>
-      </section>
-
       {/* <section>
-        <h2>Task 10</h2>
-        <input type="number" className="i-10"></input>
-        <button className="task-10">Push</button>
-        <div>Тут выводим - форма вывода любая!</div>
+        <h2>Task 9</h2>
+        <input onInput={task9} type="range" className="task-9"></input>
+        <div ref={out}>{st9}</div>
       </section> */}
+
+      <section>
+        <h2>Task 10</h2>
+        <input type="number" className="i-10" ref={i10}></input>
+        <button onClick={task10} className="task-10">Push</button>
+        <div ref={out}>Тут выводим - форма вывода любая!</div>
+      </section>
     </>
   );
 }
