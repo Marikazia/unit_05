@@ -29,13 +29,16 @@ function App() {
 
   // }
 
-  function task4() {
+	// const[st4, setSt4] = useState(0);
+  // function task4() {
+	// 	let currentState = st4;
+	// 	currentState++;
+	// 	setSt4(currentState);
+  // }
+
+  function task5() {
 
   }
-
-  // function task5() {
-
-  // }
   // function task6() {
 
   // }
@@ -61,28 +64,31 @@ function App() {
         <button onClick = {task1} className="task-1">Push</button>
         <div>{st1}</div>
       </section> */}
+			
       {/* <section>
         <h2>Task 2</h2>
         <div onMouseEnter={task2} className="task-2"></div>
         <div>{st2}</div>
       </section> */}
+
       {/* <section>
         <h2>Task 3</h2>
         <input onInput={task3} type="text" className="task-3" />
         <div>{st3}</div>
       </section> */}
 
-      <section>
-        <h2>Task 4</h2>
-        <button className="task-4">Count</button>
-        <div>{st4}</div>
-      </section>
-			
       {/* <section>
+        <h2>Task 4</h2>
+        <button onClick={task4} className="task-4">Count</button>
+        <div>{st4}</div>
+      </section> */}
+			
+      <section>
         <h2>Task 5</h2>
         <input type="checkbox" currentValue="55" />
         <div>{st5}</div>
-      </section> */}
+      </section>
+
       {/* <section>
         <h2>Task 6</h2>
         <select className="task-6">
