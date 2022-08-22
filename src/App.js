@@ -2,6 +2,9 @@ import './App.css';
 import React from 'react';
 import { useState } from 'react';
 
+function randomInt(min, max) {
+	return Math.round(Math.random() * (max - min) + min);
+}
 
 function App() {
 
@@ -77,9 +80,12 @@ function App() {
 	// 	setSt6(out6);
   // }
 
+	// const[st7, setSt7] = useState();
+	// let out=React.createRef();
   // function task7() {
-
+	// 	out.current.style.backgroundColor = `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})` ;
   // }
+
   // function task8() {
 
   // }
@@ -135,18 +141,19 @@ function App() {
         <div ref={out6}>{st6}</div>
       </section> */}
 
-      <section>
-        <h2>Task 7</h2>
-        <div className="block-7"></div>
-        <button className="task-7">Color</button>
-        <div>{st7}</div>
-      </section>
-
       {/* <section>
+        <h2>Task 7</h2>
+        <div className="block-7" ref={out}></div>
+        <button onClick={task7} className="task-7">Color</button>
+        <div>{st7}</div>
+      </section> */}
+
+      <section>
         <h2>Task 8</h2>
         <input type="text" className="task-8"></input>
         <div>{st8}</div>
-      </section> */}
+      </section>
+			
       {/* <section>
         <h2>Task 9</h2>
         <input type="range" className="task-9"></input>
