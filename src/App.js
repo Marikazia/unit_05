@@ -109,7 +109,21 @@ function App() {
 	// 	setSt9();
   // }
 
+	const[st10, setSt10] = useState([]);
+	// let out=React.createRef();
+	let i10=React.createRef();
   function task10() {
+
+		let ar10 = i10.current.value;
+		let newArr = [...st10, ar10];
+		setSt10(newArr);
+		i10.current.value='';
+		
+		// out=setSt10;
+		// ar10.push(i10.target.value);
+		// out.textContent = ar10
+		// console.log(ar10);
+		// // setSt10(st10);
 
   }
 
@@ -181,7 +195,7 @@ function App() {
         <h2>Task 10</h2>
         <input type="number" className="i-10" ref={i10}></input>
         <button onClick={task10} className="task-10">Push</button>
-        <div ref={out}>Тут выводим - форма вывода любая!</div>
+        <div>{st10}</div>
       </section>
     </>
   );
