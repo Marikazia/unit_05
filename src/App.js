@@ -36,8 +36,36 @@ function App() {
 	// 	setSt4(currentState);
   // }
 
-  function task5() {
+	const[st5, setSt5] = useState();
+	let out=React.createRef();
+  function task5(event) {
+		if(event.target.checked) {
+			out.current.textContent = event.target.value;
 
+		} else {
+			out.current.textContent = '0';
+		}
+		// setSt5(out.current.value);
+
+		// let out5 = out.current.value;
+
+    // if (out.current.checked) {
+    //   setSt5(out5);
+    // }
+    // else {
+    //   out5 = '0';
+    //   setSt5(out5);
+    // }
+
+		// // --------------
+		// let v5 = st5;
+		// if(event.target.checked) {
+		// 	v5 = event.target.value;
+		// } else {
+		// 	v5 = '0';
+		// }
+		// setSt5(v5);
+		// -------------
   }
   // function task6() {
 
@@ -64,7 +92,7 @@ function App() {
         <button onClick = {task1} className="task-1">Push</button>
         <div>{st1}</div>
       </section> */}
-			
+
       {/* <section>
         <h2>Task 2</h2>
         <div onMouseEnter={task2} className="task-2"></div>
@@ -85,8 +113,8 @@ function App() {
 			
       <section>
         <h2>Task 5</h2>
-        <input type="checkbox" currentValue="55" />
-        <div>{st5}</div>
+        <input onChange={task5} type="checkbox" currentValue="55"/>
+        <div ref={out}>{st5}</div>
       </section>
 
       {/* <section>
