@@ -86,12 +86,25 @@ function App() {
 	// 	out.current.style.backgroundColor = `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})` ;
   // }
 
-  // function task8() {
-
+	// const[st8, setSt8] = useState();
+	// let out=React.createRef();
+  // function task8(event) {
+	// 	// if(event.target.value == NaN) {
+	// 	// 	out.textContent = '0';
+	// 	// } else {
+	// 	// 	out.textContent = '1';
+	// 	// }
+	// 	if (!isNaN(event.key)) {
+	// 		out.current.textContent += '1';
+	// 	} else {
+	// 		out.current.textContent += '0';
+	// 	}
+	// 	setSt8(out.current.textContent);
   // }
-  // function task9() {
 
-  // }
+  function task9() {
+
+  }
   // function task10() {
 
   // }
@@ -148,17 +161,18 @@ function App() {
         <div>{st7}</div>
       </section> */}
 
-      <section>
-        <h2>Task 8</h2>
-        <input type="text" className="task-8"></input>
-        <div>{st8}</div>
-      </section>
-			
       {/* <section>
+        <h2>Task 8</h2>
+        <input onKeyPress={task8} type="text" className="task-8"></input>
+        <div ref={out}>{st8}</div>
+      </section> */}
+
+      <section>
         <h2>Task 9</h2>
         <input type="range" className="task-9"></input>
         <div>{st9}</div>
-      </section> */}
+      </section>
+
       {/* <section>
         <h2>Task 10</h2>
         <input type="number" className="i-10"></input>
